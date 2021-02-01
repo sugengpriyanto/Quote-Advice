@@ -1,5 +1,6 @@
 import axios from 'axios';
 import React from 'react';
+import Button from './ButtonAdvice';
 import './App.css';
 
 class App extends React.Component {
@@ -29,6 +30,7 @@ class App extends React.Component {
         <div className="card">
           <h1 className="adviceText">{this.state.advice}</h1>
         </div>
+        <Button onClick={this.fetchAdvice} />
       </div>      
     );
   }
