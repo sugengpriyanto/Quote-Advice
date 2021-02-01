@@ -25,9 +25,11 @@ class App extends React.Component {
 
   render() {
     return(
-      <div className="card">
-        <h1 className="adviceText">{this.state.advice}</h1>
-      </div>
+      <div className="App">
+        <div className="card">
+          <h1 className="adviceText">{this.state.advice}</h1>
+        </div>
+      </div>      
     );
   }
 }
